@@ -1,0 +1,11 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <!--  <input #element (change)="changeFontSizeValue(element.value)" max="72" min="9" type="range" value="18">-->
+  <input [(ngModel)]="fontSize" max="72" min="9" type="range" value="18">
+</div>
+
+<p [style.fontSize.px]="fontSize" class="output">
+  This is a paragraph.
+</p>
